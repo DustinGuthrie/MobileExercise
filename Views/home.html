@@ -5,6 +5,14 @@
 <div> -->
   <button type="button" id="submit" ng-click="getFile()">Upload</button>
 </div>
+<div >
+  <h3>Some Data from a recent run:</h3>
+  <h5>Date:&nbsp&nbsp{{displayList[0].Date}}<br>
+      Distance:&nbsp&nbsp{{displayList[0].Distance}}<br>
+      Duration:&nbsp&nbsp{{displayList[0].Duration}}<br>
+  </h5>
+
+</div>
 
   <div>
     <h3>Add New Runs To The List Here:</h3>
@@ -19,7 +27,18 @@
   </div>
 
   <div>
-    <h3>Your Current Pace Is:</h3>
-    <h3 style="color: red">{{runningPace}}</h3>
+    <h3>Your Current Pace Across All Recorded Runs:</h3>
+    <h5 style="color: red">{{runningPace}}</h5>
+  </div>
+
+  <div>
+    <h3>These are your 5 Fastest Paced Runs:</h3>
+    <h5>{{sortedPaceArr[0]}}<br>
+        {{sortedPaceArr[1]}}<br>
+        {{sortedPaceArr[2]}}<br>
+        {{sortedPaceArr[3]}}<br>
+        {{sortedPaceArr[4]}}<br>
+    </h5>
+    </h5>
 
   </div>

@@ -17,26 +17,10 @@
           console.log("This is the addRun SERVICE Firing", data);
         });
       };
-      // var getSingleDependent = function (id) {
-      //   console.log("this is getsingledependent in dependent service:", id);
-      //   console.log("getsingledependent service is firing!");
-      //   return $http.get(getDependent + id);
-      // };
-      // var updateAppointment = function (updatedAppointment) {
-      //   return $http.put(url + '/' + updatedAppointment._id, updatedAppointment);
-      // };
-      // var removeAppointment = function (appointmentId) {
-      //   return $http.delete(url + '/' + appointmentId);
-      // };
 
       return {
         getRuns: getRuns,
         addRun:  addRun
-        // addAppointment: addAppointment,
-        // removeAppointment: removeAppointment,
-        // updateAppointment: updateAppointment,
-        // getAppointments: getAppointments,
-        // getSingleDependent: getSingleDependent
       };
     });
 
