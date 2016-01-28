@@ -1,0 +1,25 @@
+<div id="fileInput">
+  <h3>Upload Historical Running Data</h3>
+  <input type="file" id="files" multiple>
+<!-- </div>
+<div> -->
+  <button type="button" id="submit" ng-click="getFile()">Upload</button>
+</div>
+
+  <div>
+    <h3>Add New Runs To The List Here:</h3>
+  </div>
+  <div>
+    <input id="date" type="text" size="30" name="title" ng-model="newRun.Date" placeholder="Date 1/10/16" value="">
+    <input id="distance" type="text" size="30" name="store" ng-model="newRun.Distance" placeholder="Distance" value="">
+    <input id="duration" type="text" size="30" name="price" ng-model="newRun.Duration" placeholder="Duration" value="">
+    <input id="shoe" type="text" size="30" name="price" ng-model="newRun.ShoeMake" placeholder="Shoe Make" value="">
+    <input id="temperature" type="text" size="30" name="photo" ng-model="newRun.Temperature" placeholder="Temperature" value="">
+    <button type="button" class="btn btn-default add" ng-click="addRun(newRun)" name="button">Add to Run List</button>
+  </div>
+
+  <div>
+    <h3>Your Current Pace Is:</h3>
+    <h3 style="color: red">{{runningPace}}</h3>
+
+  </div>
